@@ -3,6 +3,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import Root from '../Root/Root';
 import HomeScreen from '../../screens/HomeScreen/HomeScreen';
+import QrCodeScreen from '../../screens/QrCodeScreen/QrCodeScreen';
+
 const Drawer = createDrawerNavigator();
 
 function App() {
@@ -10,6 +12,7 @@ function App() {
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeScreen} />
+        <Drawer.Screen name="QrCodeScreen" component={QrCodeScreen} />
         <Drawer.Screen name="Root" component={Root} />
       </Drawer.Navigator>
     </NavigationContainer>
